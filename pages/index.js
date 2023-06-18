@@ -33,6 +33,7 @@ export default function Home() {
         console.log("walletAddr", walletAddr)
         const signature = await signer.signMessage("prudhvi nibba");
         console.log('signature', signature)
+        console.log("hhhh")
     }
     return (
         <div className={style.wrapper}>
@@ -43,19 +44,7 @@ export default function Home() {
                 </>
             ) : (
                 <div className={style.walletConnectWrapper}>
-                    <div className={style.background}>
-                        <img src="https://www.linkpicture.com/q/metamask_1.gif" alt="" />
-                        <div className={style.cardsize}>
-
-                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                            <button
-                                className={style.bigButton}
-                                onClick={() => connectWallet('injected')}
-                            >
-                                Connect Wallet
-                            </button>
-                        </div>
-                    </div>
+                    <Hero />
                 </div>
             )}
         </div>

@@ -5457,6 +5457,11 @@ hardhat@^2.9.2:
     uuid "^8.3.2"
     ws "^7.4.6"
 
+harhat@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/harhat/-/harhat-1.0.1.tgz"
+  integrity sha512-8uDw+Fw01m9Tt2y/9BupfMPh4bVHvimwG0Dt55qTNDVwRI731v5UDMAS7eHNV1PuuE6DTGVKdjlS26lBlX0XiQ==
+
 has-ansi@^2.0.0:
   version "2.0.0"
   dependencies:
