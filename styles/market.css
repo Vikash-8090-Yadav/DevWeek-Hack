@@ -1,0 +1,11 @@
+.market{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    flex: 1;
+    padding: 30px;
+}
+
+
+p{
+    color: rgb(231, 37, 37);
+}
