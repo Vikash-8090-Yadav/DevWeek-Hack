@@ -2,12 +2,12 @@ import Head from 'next/head'
 import { useState } from 'react';
 import { ethers } from 'ethers';
 import { useWeb3 } from '@3rdweb/hooks';
-import Hero from "../components/Hero"
+import Main from "../components/Main"
 import toast, { Toaster } from 'react-hot-toast'
 
 const style = {
     wrapper: ``,
-    walletConnectWrapper: `bg-[orange] flex flex-col justify-center items-center h-screen w-screen  `,
+    // walletConnectWrapper: `bg-[orange] flex flex-col justify-center items-center h-screen w-screen  `,
     button: `border border-[#282b2f] bg-[orange] p-[0.8rem] text-xl font-semibold rounded-lg cursor-pointer text-black`,
     details: `text-lg text-center text=[#282b2f] font-semibold mt-4`,
     background: `max-w-sm rounded-lg overflow-hidden shadow-lg bg-[white]`,
@@ -18,7 +18,7 @@ const style = {
 
 }
 export default function Home() {
-    const { address, connectWallet } = useWeb3()
+  
     const [loginState, setLoginState] = useState();
     const login = async () => {
         setLoginState("Connecting to your wallet..");
@@ -37,16 +37,9 @@ export default function Home() {
     }
     return (
         <div className={style.wrapper}>
-            <Toaster position="top-center" reverseOrder={false} />
-            {address ? (
-                <>
-                    <Hero />
-                </>
-            ) : (
                 <div className={style.walletConnectWrapper}>
-                    <Hero />
+                    <Main />
                 </div>
-            )}
         </div>
     )
 }

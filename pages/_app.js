@@ -1,5 +1,4 @@
 import '../styles/globals.css'
-import '../styles/main.css'
 import '../styles/marketplace.css'
 import '../styles/logout.css'
 import '../styles/sidebar.css'
@@ -13,12 +12,8 @@ function MyApp({ Component, pageProps }) {
     injected: {},
   }
   return (
-    <ThirdwebWeb3Provider
-      supportedChainIds={supportedChainIds}
-      connectors={connectors}
-    >
+    
       <Component {...pageProps} />
-    </ThirdwebWeb3Provider>
 
 
   )
