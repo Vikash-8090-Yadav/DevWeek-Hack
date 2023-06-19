@@ -13,7 +13,7 @@ function Footer() {
             <div className = "">
               <h4 className = "text-3xl pb-4 font-bold font-title">
                 Dev . Connect
-                <span className = "text-blue-400">  .eth</span>
+                <span className = "text-blue-400">.eth</span>
               </h4>
               <p className = "text-gray-500 pb-2">Join 25,000+ others and never miss out our Latest Updates.</p>
               <form action = "" className = "flex flex-row max-sm:flex-col max-sm:items-center">

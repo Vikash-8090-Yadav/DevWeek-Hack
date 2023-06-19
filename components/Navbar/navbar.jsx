@@ -1,117 +1,139 @@
-import React, { useState } from 'react'
-import { Link } from 'react-scroll';
-import { AiFillHome } from 'react-icons/ai'
-import { FaDatabase } from 'react-icons/fa';
-import { FcAbout } from 'react-icons/fc'
-import { BsFillTelephoneFill } from 'react-icons/bs'
-// import { Web3Button } from '@web3modal/react';
-// import LogoutButton from "../Component/LogoutButton"
-// import SalDappLogo from "../public/images/sal-Dapp.png"
-import Image from "next/image"
+import { useState } from "react";
 
-const Navbar = () => {
-  const [nav, setNav] = useState(false);
-  const link1 = [
-    {
-      id: 1,
-
-      link: "Home",
-      child: (
-        <>
-          <AiFillHome size={25} />
-        </>
-      ),
-      name: "Home",
-    }
-  ]
-  const links = [
-    
-    {
-      id: 2,
-      link: "Text",
-      child: (
-        <>
-          <FaDatabase size={25} />
-        </>
-      ),
-      name: "Data",
-    },
-    
-    {
-      id: 3,
-      link: "About",
-      child: (
-        <>
-          <FcAbout size={25} />
-        </>
-      ),
-      name: "About",
-    },
-   
-    {
-      id: 4,
-      link: "contact",
-      child: (
-        <>
-          <BsFillTelephoneFill size={25} />
-        </>
-      ),
-      name: "Support Me"
-    }
-  ]
-
+function NavLink({ to, children }) {
   return (
-    <>
-      <div className='navbar w-screen  bg-gradient-to-b from-gray-900 to-black flex justify-between items-center  overflow-hidden h-14 py-2 px-1 text-slate-300 fixed z-50'>
-        <div className="flex cursor-pointer">
-          <div className="w-10 h-10 px-2 py-2 pt-2">
-            
-          </div>
-          <h1 className="text-2xl font-bold text-blue-500 ml-2 max-md:text-base max-sm:ml-1 max-md:mr-3 cursor-default font-title max-md:pt-2 pt-1 hover:text-white hover:cursor-pointer">DAPP.eth</h1>
-        </div>
+    <a href={to} className={`mx-4`}>
+      {children}
+    </a>
+  );
+}
 
-        <ul className="hidden center pl-6 md:flex text-blue-500">
-        {link1.map(({ id, link, name }) => (
-            
-            <li key={id} className="px-4 py-4  cursor-pointer md:hover:text-white duration-300 text-xl font-semibold">
-              {link === 'Logout' ?
-                <a className="hidden" onClick={handleLogout}>{link}</a> :
-                <a href="/">{name}</a>
-              }
-            </li>
-          ))}
-          {links.map(({ id, link, name }) => (
-            <li key={id} className="px-4 py-4  cursor-pointer md:hover:text-white duration-300 text-xl font-semibold">
-              {link === 'Logout' ?
-                <a className="hidden" onClick={handleLogout}>{link}</a> :
-                <Link to={link} smooth duration={50}>{name}</Link>
-              }
-            </li>
-          ))}
-        </ul>
-
-        <ul className="md:hidden flex font-extrabold text-xl text-blue-500">
-          {
-            links.map(({ id, link, child }) => (
-              <li key={id} className="px-4 cursor-pointer py-4 text-l capitalize max-sm:px-1">
-                <Link onClick={() => setNav(!nav)} to={link} smooth duration={5000}>{child}</Link>
-              </li>
-            ))
+function MobileNav({ open, setOpen }) {
+  return (
+    <div
+  className={`absolute top-0 left-0 h-screen w-screen bg-white transform ${
+    open ? "-translate-x-0" : "-translate-x-full"
+  } transition-transform duration-300 ease-in-out bg-gray filter drop-shadow-md `}
+>
+      <div className="flex items-center justify-center filter drop-shadow-md bg-gray h-20">
+        {" "}
+        {/*logo container*/}
+        <a className="styles.logo text-xl font-semibold" href="/">
+          OS.Dev
+        </a>
+      </div>
+      <div className="flex flex-col ml-4">
+        <a
+          className="text-xl font-medium my-4"
+          href="/"
+          onClick={() =>
+            setTimeout(() => {
+              setOpen(!open);
+            }, 100)
           }
-        </ul>
-
-        <div className="flex">
-          <button className="pl-2 py-4 text-l font-xs">
-            {/* <Web3Button balance="show" icon="hide" label="Connect Wallet" /> */}
+        >
+          About
+        </a>
+        <a
+          className="text-xl font-normal my-4"
+          href="/"
+          onClick={() =>
+            setTimeout(() => {
+              setOpen(!open);
+            }, 100)
+          }
+        >
+          Resources
+        </a>
+        <a
+          className="text-xl font-normal my-4"
+          href="/"
+          onClick={() =>
+            setTimeout(() => {
+              setOpen(!open);
+            }, 100)
+          }
+        >
+          Blog
+        </a>
+        <a
+          className="text-xl font-normal my-4"
+          href="/"
+          onClick={() =>
+            setTimeout(() => {
+              setOpen(!open);
+            }, 100)
+          }
+        >
+          Communities
+        </a>
+        <a
+          className="text-xl font-normal my-4"
+          href="/"
+          onClick={() =>
+            setTimeout(() => {
+              setOpen(!open);
+            }, 100)
+          }
+        >
+          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            LOGIN
           </button>
-          <button className="pl-4 py-4 px-4 text-l font-small">
-            H{/* <LogoutButton handleLogout={handleLogout} /> */}
-          </button>
+        </a>
+      </div>
+    </div>
+  );
+}
 
+export default function Navbar() {
+  const [open, setOpen] = useState(false);
+  return (
+    <nav className="flex sticky top-0 z-50 filter drop-shadow-md bg-white px-4 py-4 h-20  items-center ">
+      <MobileNav open={open} setOpen={setOpen} />
+      <div className="w-3/12 flex items-center">
+        <a className="text-4xl tracking-widest  font-semibold" href="/">
+          {" "}
+          <h2>
+            <span className="text-blue-800">OS.D</span>ev
+          </h2>
+        </a>
+      </div>
+
+      <div className="hidden md:flex text-1xl font-semibold font-serif	 ml-16 w-11/12 justify-end  items-center ">
+        <NavLink to="/">ABOUT US</NavLink>
+        <NavLink to="/Market">Market</NavLink>
+        <NavLink to="/">BLOG</NavLink>
+        <NavLink to="/">COMMUNITIES</NavLink>
+      </div>
+      <div className="w-9/12 flex justify-end items-center">
+        <button className=" hidden md:flex bg-blue-500 hover:bg-blue-700 text-white font-bold mx-12 py-2 px-4 rounded">
+          LOGIN
+        </button>
+
+        <div
+          className="z-50 flex relative w-8 h-8 flex-col justify-between items-center md:hidden"
+          onClick={() => {
+            setOpen(!open);
+          }}
+        >
+          {/* hamburger button */}
+          <span
+            className={`h-1 w-full bg-black rounded-lg transform transition duration-300 ease-in-out ${
+              open ? "rotate-45 translate-y-3.5" : ""
+            }`}
+          />
+          <span
+            className={`h-1 w-full bg-black rounded-lg transition-all duration-300 ease-in-out ${
+              open ? "w-0" : "w-full"
+            }`}
+          />
+          <span
+            className={`h-1 w-full bg-black rounded-lg transform transition duration-300 ease-in-out ${
+              open ? "-rotate-45 -translate-y-3.5" : ""
+            }`}
+          />
         </div>
       </div>
-    </>
+    </nav>
   );
-};
-
-export default Navbar
+}
