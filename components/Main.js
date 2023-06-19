@@ -5,7 +5,7 @@ import Footer from "./Footer/footer"
 import Market from '../pages/Market'
 import Navbar from "./Navbar/navbar"
 
-
+import Carousel from "./Hero/hero"
 import Support from "./Support/support"
 import Hero from "./Hero/hero"
 
@@ -41,7 +41,8 @@ const Main = () => {
     return (
         <div>
             <Navbar/>
-            <Hero/>
+            <Carousel/>
+          
             <Support/>
             <Footer/>
          </div>
