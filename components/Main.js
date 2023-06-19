@@ -5,6 +5,8 @@ import Footer from "./Footer/footer"
 import Market from '../pages/Market'
 import Navbar from "./Navbar/navbar"
 
+
+import Support from "./Support/support"
 import Hero from "./Hero/hero"
 
 const style = {
@@ -40,27 +42,8 @@ const Main = () => {
         <div>
             <Navbar/>
             <Hero/>
-        <div className={style.wrapper}>
-            <div className={style.container}>
-                <div className={style.contentWrapper}>
-                    <div className={style.copyContainer}>
-                        <div className={style.title}>
-                            Upcoming De-Fi for Farmers.
-                        </div>
-                        <div className={style.description}>
-                            AgriCrop is a NFT marketplace for crops, agriculture tools.
-                        </div>
-                        <div className={style.ctaContainer}>
-                            <Link href="/Market">
-                                <MyButton />
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-            </div>
-           
-        </div >
-         <Footer></Footer>
+            <Support/>
+            <Footer/>
          </div>
     )
 }

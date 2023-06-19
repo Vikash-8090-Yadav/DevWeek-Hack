@@ -94,7 +94,7 @@ export default function Navbar() {
         <a className="text-4xl tracking-widest  font-semibold" href="/">
           {" "}
           <h2>
-            <span className="text-blue-800">OS.D</span>ev
+            <span className="text-blue-800">Dev.Week</span>
           </h2>
         </a>
       </div>
