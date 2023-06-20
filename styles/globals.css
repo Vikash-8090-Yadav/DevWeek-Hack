@@ -89,7 +89,7 @@ side-over{
 }
 
 .load{
-       text-align:center;
+     text-align:center;
      display :flex;
      justify-content:center;
      align-items:center;
@@ -102,3 +102,4 @@ side-over{
 .support{
     background: linear-gradient(135deg, #690A4A, #59194A, #49274A, #39364B, #28454B, #18534B, #08624B);
 }
+

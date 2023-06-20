@@ -2036,11 +2036,6 @@
     buffer "6.0.3"
     valtio "1.10.5"
 
-"@web3modal/ethereum@^2.4.7":
-  version "2.4.7"
-  resolved "https://registry.npmjs.org/@web3modal/ethereum/-/ethereum-2.4.7.tgz"
-  integrity sha512-sYZ1tLkS4qKoki5D337NYtku+hmaFs3xul4/eMrloI9kO54t4Ab9uIhgojxKbfl6uhlJaVMXfgIC3U3jRDJmJg==
-
 "@web3modal/react@^2.4.7":
   version "2.4.7"
   resolved "https://registry.npmjs.org/@web3modal/react/-/react-2.4.7.tgz"
