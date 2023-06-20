@@ -12,12 +12,14 @@ task("accounts","Prints the list of the accounts",async (taskArgs , hre )=>{
 module.exports = {
   solidity: "0.8.10",
 
-  defaultNetwork: "polygon",
+  defaultNetwork: "alfajores",
   networks:{
     hardhat:{},
-    polygon :{
-      url : "https://polygon-mumbai.infura.io/v3/95688893704a4d5bac083296c3547383",
-      accounts: ["8de377277b10cfdb63f8030bf13a092dfba5e4b8b96bff9c5f95386e96115e5a"]
+    alfajores :{
+      url : "https://celo-alfajores.infura.io/v3/b208399f926f487093f45debc86299bb",
+      accounts: ["949924cc6116138ccde9765e0829bc13e1f60f98a73606190b4975f2c673f373"]
     }
   }
 };
+
+// 0xc1e6ddf8eED76c0D6CFC901B38CCBB7F3501c66a

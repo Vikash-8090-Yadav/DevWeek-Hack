@@ -28,13 +28,16 @@ export default function ResellNFT() {
 
   async function listNFTForSale() {
     if (!price) return
-    const web3Modal = new Web3Modal()
-    const connection = await web3Modal.connect()
-    const provider = new ethers.providers.Web3Provider(connection)
-    const signer = provider.getSigner()
+    const provider = new ethers.providers.Web3Provider(window.ethereum);
+    await provider.send('eth_requestAccounts', []);
+    const signer = provider.getSigner();
+    // const web3Modal = new Web3Modal()
+    // const connection = await web3Modal.connect()
+    // const provider = new ethers.providers.Web3Provider(connection)
+    // const signer = provider.getSigner()
 
     const priceFormatted = ethers.utils.parseUnits(formInput.price, 'ether')
-    let contract = new ethers.Contract(marketplaceAddress, NFTMarketplace.abi, signer)
+    let contract = new ethers.Contract('0xc1e6ddf8eED76c0D6CFC901B38CCBB7F3501c66a', NFTMarketplace.abi, signer)
     let listingPrice = await contract.getListingPrice()
 
     listingPrice = listingPrice.toString()

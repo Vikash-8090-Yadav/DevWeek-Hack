@@ -18,22 +18,7 @@ const style = {
 }
 export default function Home() {
   
-    const [loginState, setLoginState] = useState();
-    const login = async () => {
-        setLoginState("Connecting to your wallet..");
-        if (!window.ethereum) {
-            setLoginState("No MetaMask wallet.. please install it")
-            return;
-        }
-        const provider = new ethers.providers.Web3Provider(window.ethereum);
-        await provider.send("eth_requestAccounts", []);
-        const signer = provider.getSigner();
-        const walletAddr = await signer.getAddress();
-        console.log("walletAddr", walletAddr)
-        const signature = await signer.signMessage("prudhvi nibba");
-        console.log('signature', signature)
-        console.log("hhhh")
-    }
+
     return (
         <div className={style.wrapper}>
                 <div className={style.walletConnectWrapper}>

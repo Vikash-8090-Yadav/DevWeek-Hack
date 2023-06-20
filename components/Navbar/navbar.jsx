@@ -1,12 +1,12 @@
 import { useState } from "react";
 import Script from "next/script";
-
+import Link from 'next/link'
 
 function NavLink({ to, children }) {
   return (
-    <a href={to} className={`mx-4`}>
+    <Link href={to} className={`mx-4`}>
       {children}
-    </a>
+    </Link>
   );
 }
 
@@ -20,12 +20,12 @@ function MobileNav({ open, setOpen }) {
       <div className="flex items-center justify-center filter drop-shadow-md bg-gray h-20">
         {" "}
         {/*logo container*/}
-        <a className="styles.logo text-xl font-semibold" href="/">
+        <Link className="styles.logo text-xl font-semibold" href="/">
           OS.Dev
-        </a>
+        </Link>
       </div>
       <div className="flex flex-col ml-4">
-        <a
+        <Link
           className="text-xl font-medium my-4"
           href="/"
           onClick={() =>
@@ -35,8 +35,8 @@ function MobileNav({ open, setOpen }) {
           }
         >
           About
-        </a>
-        <a
+        </Link>
+        <Link
           className="text-xl font-normal my-4"
           href="/"
           onClick={() =>
@@ -46,8 +46,8 @@ function MobileNav({ open, setOpen }) {
           }
         >
           Resources
-        </a>
-        <a
+        </Link>
+        <Link
           className="text-xl font-normal my-4"
           href="/"
           onClick={() =>
@@ -57,8 +57,8 @@ function MobileNav({ open, setOpen }) {
           }
         >
           Blog
-        </a>
-        <a
+        </Link>
+        <Link
           className="text-xl font-normal my-4"
           href="/"
           onClick={() =>
@@ -68,8 +68,8 @@ function MobileNav({ open, setOpen }) {
           }
         >
           Communities
-        </a>
-        <a
+        </Link>
+        <Link
           className="text-xl font-normal my-4"
           href="/"
           onClick={() =>
@@ -81,7 +81,7 @@ function MobileNav({ open, setOpen }) {
           <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
             LOGIN
           </button>
-        </a>
+        </Link>
       </div>
     </div>
   );
@@ -156,12 +156,12 @@ export default function Navbar() {
        
       <MobileNav open={open} setOpen={setOpen} />
       <div className="w-3/12 flex items-center">
-        <a className="text-4xl tracking-widest  font-semibold" href="/">
+        <Link className="text-4xl tracking-widest  font-semibold" href="/">
           {" "}
           <h2>
             <span className="text-blue-800">Dev.Week</span>
           </h2>
-        </a>
+        </Link>
       </div>
 
       <div className="hidden md:flex text-1xl font-semibold font-serif	 ml-16 w-11/12 justify-end  items-center ">

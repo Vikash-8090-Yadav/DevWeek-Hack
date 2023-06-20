@@ -7,7 +7,7 @@ import Hero from "../components/Main"
 import toast, { Toaster } from 'react-hot-toast';
 
 // import web3Modal from 'web3Modal'
-
+import Home from "./marketplace"
 import Link from 'next/link';
 
 const style = {
@@ -23,34 +23,35 @@ const style = {
 
 function Market() {
   return (
-    <div className={style.walletConnectWrapper}>
+    <div className="">
 
       <div className={style.wrapper}>
         <nav className="border-b p-10">
           <p className="text-7xl font-medium">AgriCrop Marketplace</p>
           <div className="flex mt-4">
             <Link href="/">
-              <a className="mr-6 text-black-500">
+              <div className="mr-6 text-black-500">
                 Home
-              </a>
+              </div>
             </Link>
             <Link href="/sellnft">
-              <a className="mr-6 text-black-500">
+              <div className="mr-6 text-black-500">
                 Sell NFT
-              </a>
+              </div>
             </Link>
             <Link href="/mynft">
-              <a className="mr-6 text-black-500">
+              <div className="mr-6 text-black-500">
                 My NFTs
-              </a>
+              </div>
             </Link>
             <Link href="/dashboard">
-              <a className="mr-6
+              <div className="mr-6
                text-black-500">
                 Dashboard
-              </a>
+              </div>
             </Link>
           </div>
+          <Home/>
         </nav>
       </div>
     </div>

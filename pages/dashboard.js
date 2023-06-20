@@ -24,7 +24,7 @@ export default function CreatorDashboard() {
     const provider = new ethers.providers.Web3Provider(connection)
     const signer = provider.getSigner()
 
-    const contract = new ethers.Contract(marketplaceAddress, NFTMarketplace.abi, signer)
+    const contract = new ethers.Contract('0xc1e6ddf8eED76c0D6CFC901B38CCBB7F3501c66a', NFTMarketplace.abi, signer)
     const data = await contract.fetchItemsListed()
 
     const items = await Promise.all(data.map(async i => {

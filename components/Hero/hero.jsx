@@ -29,7 +29,7 @@ const Hero = () => {
             <div className="text-dark pt-5 mb-3 max-w-md text-justify">
            
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique natus aliquid adipisci nobis praesentium dolorum voluptatibus illum magni tenetur aut ullam ea quia error, perspiciatis assumenda vitae maxime est cupiditate?
-               <div><Link href='/Market'><button className="group font-semibold  text-white w-fit px-6 py-3 my-2  flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">
+               <div><Link legacyBehavior href={"/Market"}><button className="group font-semibold  text-white w-fit px-6 py-3 my-2  flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">
                 Marketplace
                 <span className="md:group-hover:rotate-90 duration-300">
                   <AiOutlineArrowRight size={25} className="ml-2 font-semibold max-sm:hidden" />
@@ -40,18 +40,22 @@ const Hero = () => {
               
             </div>
           </div>
-
+       
           <div className = "  ml-32 hero pl-12 ml-13 flex flex-col items-center justify-center md:hover:scale-125 duration-300">
-            <Image src = {ProfilePic} height="450" width="550" className = " max-md:pt-10 " />
-            <Link href='/Market'>
+            <Image src = {ProfilePic} height="450" width="550" className = " max-md:pt-10 " />         
             <div className='pr-full'><button className="group font-semibold  text-white w-fit px-6 py-3 my-2  flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">
-                Marketplace
+            <Link legacyBehavior href={"/Market"}>
+            
+            Marketplace
+     
+</Link>
+             
                 <span className="md:group-hover:rotate-90 duration-300">
                   <AiOutlineArrowRight size={25} className="ml-2 font-semibold max-sm:hidden" />
                 </span>
               </button>
               </div>
-              </Link>
+          
           </div>
         </div>
        
