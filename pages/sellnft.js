@@ -19,9 +19,6 @@ const client = IPFSHTTPClient({
 		authorization: auth,
 	},
 });
-client.add("Hello World").then((res) => {
-	console.log(res);
-});
 
 const style = {
   wrapper: `relative w-1/8 flex flex-col pb-1`,
