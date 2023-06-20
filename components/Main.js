@@ -10,6 +10,7 @@ import Support from "./Support/support"
 import Hero from "./Hero/hero"
 
 import TestimonialsPage from "./Testimonials"
+import Card from "./Card/card"
 
 import Example from "./feature"
 import About from "./About"
@@ -50,6 +51,7 @@ const Main = () => {
             <Example/>
             <About/>
             <TestimonialsPage/>
+            <Card/>
             <Support/>
             <Footer/>
          </div>
