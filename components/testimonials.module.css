@@ -1,0 +1,59 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.testimonialsSection {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.sectionHeading {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.testimonialBoxes {
+  display: flex;
+  justify-content: center;
+}
+
+.testimonialBox {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 0 1rem;
+  max-width: 300px;
+}
+
+.profileImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.profileImage img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+h3 {
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.readMoreButton {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
