@@ -9,6 +9,11 @@ import Carousel from "./Hero/hero"
 import Support from "./Support/support"
 import Hero from "./Hero/hero"
 
+import TestimonialsPage from "./Testimonials"
+
+import Example from "./feature"
+import About from "./About"
+
 const style = {
     // wrapper: `relative`,
     // container: `before:content-[''] before:bg-red-500 before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[url('https://www.linkpicture.com/q/Food-Tank-SRI-Rice-1.png')] before:bg-cover before:bg-center before:opacity-30 before:blur`,
@@ -42,7 +47,9 @@ const Main = () => {
         <div>
             <Navbar/>
             <Carousel/>
-          
+            <Example/>
+            <About/>
+            <TestimonialsPage/>
             <Support/>
             <Footer/>
          </div>
