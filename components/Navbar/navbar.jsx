@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Script from "next/script";
+
 
 function NavLink({ to, children }) {
   return (
@@ -85,10 +87,73 @@ function MobileNav({ open, setOpen }) {
   );
 }
 
+const networks = {
+ 
+  celo:{
+   chainId: `0x${Number(44787).toString(16)}`,
+   chainName:"Celo",
+   nativeCurrency:{
+      name:"CELO",
+      symbol: "CELO",
+      decimals: 18
+
+   },
+   rpcUrls:["https://alfajores-forno.celo-testnet.org"],
+   blockExplorerUrls:["https://alfajores-blockscout.celo-testnet.org"]
+
+  },
+  // for ropsten 
+  // ropsten: {
+  //   provider: () => new HDWalletProvider(mnemonic, `https://ropsten.infura.io/v3/YOUR-PROJECT-ID`),
+  //   network_id: 3,       // Ropsten's id
+  //   gas: 5500000,        // Ropsten has a lower block limit than mainnet
+  //   confirmations: 2,    // # of confirmations to wait between deployments. (default: 0)
+  //   timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
+  //   skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
+};
+
+
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+
+  const [address , setAddress] = useState('');
+  const [balance , setBalance] = useState(' ');
+  async function connectWallet() {
+    if (typeof window.ethereum === 'undefined') {
+      console.log('Please install MetaMask');
+      return;
+    }
+
+    const web3 = new Web3(window.ethereum);
+    console.log(web3.version);
+
+    try {
+      const chainId = await web3.eth.getChainId();
+      if (chainId !== networks.celo.chainId) {
+        await window.ethereum.request({
+          method: 'wallet_addEthereumChain',
+          params: [networks.celo],
+        });
+      }
+
+      const accounts = await web3.eth.requestAccounts();
+      const address = accounts[0];
+      setAddress(address);
+
+      const balance = await web3.eth.getBalance(address);
+      const finalBalance = web3.utils.fromWei(balance) + ' ' + networks.celo.nativeCurrency.symbol;
+      console.log('Result:', finalBalance);
+      setBalance(finalBalance);
+    } catch (error) {
+      console.log('Error:', error);
+    }
+  }
+
   return (
     <nav className="flex sticky top-0 z-50 filter drop-shadow-md bg-white px-4 py-4 h-20  items-center ">
+       <Script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.2.7-rc.0/web3.min.js"></Script>
+    <Script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></Script>
+       
       <MobileNav open={open} setOpen={setOpen} />
       <div className="w-3/12 flex items-center">
         <a className="text-4xl tracking-widest  font-semibold" href="/">
@@ -107,7 +172,12 @@ export default function Navbar() {
       </div>
       <div className="w-9/12 flex justify-end items-center">
         <button className=" hidden md:flex bg-blue-500 hover:bg-blue-700 text-white font-bold mx-12 py-2 px-4 rounded">
-          LOGIN
+
+        <div className="wallletwrapper" onClick={connectWallet}>
+            {balance == ''?<bl className="bl">0</bl>:<bl className="bl"><h2>{balance.slice(0,4)} {balance.slice(-5)}</h2></bl>}
+            {address == ''?<wl className="wl">Connect Wallet</wl>:<wl1 className="wl1"><h2>{address.slice(0,6)}...{address.slice(39)}</h2></wl1>}
+             </div>
+
         </button>
 
         <div
@@ -137,3 +207,6 @@ export default function Navbar() {
     </nav>
   );
 }
+
+
+
