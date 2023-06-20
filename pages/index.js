@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import { useState } from 'react';
 import { ethers } from 'ethers';
-import { useWeb3 } from '@3rdweb/hooks';
 import Main from "../components/Main"
 import toast, { Toaster } from 'react-hot-toast'
 
