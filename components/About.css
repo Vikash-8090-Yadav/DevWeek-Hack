@@ -1,0 +1,29 @@
+import React from "react";
+import styles from "./about.module.css";
+
+const AboutPage = () => {
+  return (
+    <div className={styles.container}>
+      <section className={styles.aboutSection}>
+        <h2 className={styles.sectionHeading}>About Us</h2>
+        <p className={styles.italicText}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at
+          mauris nec risus sodales finibus. Fusce vestibulum dolor sit amet
+          dolor placerat, nec euismod odio varius. Integer malesuada tincidunt
+          nisl, vel aliquet turpis interdum at.
+        </p>
+      </section>
+      <section className={styles.problemSection}>
+        <h2 className={styles.coloredHeading}>The Problem</h2>
+        <p className={styles.coloredText}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at
+          mauris nec risus sodales finibus. Fusce vestibulum dolor sit amet
+          dolor placerat, nec euismod odio varius. Integer malesuada tincidunt
+          nisl, vel aliquet turpis interdum at.
+        </p>
+      </section>
+    </div>
+  );
+};
+
+export default AboutPage;
