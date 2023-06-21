@@ -14,6 +14,44 @@
 ![https://img.shields.io/badge/Made%20with-Hardhat-yellow](https://img.shields.io/badge/Made%20with-Hardhat-red)
 </div>
 
+## How to Run Locally
+
+To run the Sal-dApp locally, follow these steps:
+1. Clone the repository:
+ ```bash
+ git clone https://github.com/Vikash-8090-Yadav/DevWeek-Hack.git
+ ```
+ 2. Navigate to the project directory:
+```bash
+cd DevWeek-Hack
+```
+3. Install the dependencies:
+```bash
+npm install
+```
+4. Start the development server:
+```bash
+npm run dev
+```
+5. Access the dApp:
+Open your web browser and visit http://localhost:3000 to interact with the SaL application.
+  
+### 	▶️ Experience the Live Site by Clicking the Link Below
+<br>
+<div align="center">
+  <table>
+    <tr>
+      <th>Deployed On</th>
+      <th>URL</th>
+    </tr>
+    <tr>
+      <td>Vercel</td>
+      <td> https://dev-week-hack.vercel.app/ /</td>
+    </tr>
+  </table>
+</div>
+
+<br><br>
 # Summary
 
 - [About](#about-project)
