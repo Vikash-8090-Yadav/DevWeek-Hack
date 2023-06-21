@@ -158,9 +158,9 @@ export default function Navbar() {
       <div className="w-3/12 flex items-center">
         <Link className="text-4xl tracking-widest  font-semibold" href="/">
           {" "}
-          <h2>
-            <span className="text-blue-800">Dev.Week</span>
-          </h2>
+          <h3>
+            <span className="text-blue-500">SustainableStitch </span>
+          </h3>
         </Link>
       </div>
 
