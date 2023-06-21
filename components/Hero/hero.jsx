@@ -25,12 +25,11 @@ const Hero = () => {
             </h5>
            
             <div className = "text-yellow-400 max-md:text-1xl text-5xl font-bold flex flex-col max-md:items-center justify-center">
-              <Typewriter options = {{ strings: ["Crop Management","Proof of ownership", "Decide the price Directlt by owner"], autoStart: true, loop: true, }}/>
+              <Typewriter options = {{ strings: ["Proof of ownership", "Decide the price Directly by owner"], autoStart: true, loop: true, }}/>
               </div>
             <div className="text-dark pt-5 mb-3 max-w-md text-justify">
            
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique natus aliquid adipisci nobis praesentium dolorum voluptatibus illum magni tenetur aut ullam ea quia error, perspiciatis assumenda vitae maxime est cupiditate?
-               <div><Link legacyBehavior href={"/Market"}><button className="group font-semibold  text-white w-fit px-6 py-3 my-2  flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">
+            Our platform as a digital shop, small-scale textile producers may present their goods to a large audience. Manufacturers can set their own prices, submit photographs of their products, write in-depth product descriptions, and create their own online profiles. Customers can shop from a broad selection of clothing and buy straight from the producers.               <div><Link legacyBehavior href={"/Market"}><button className="group font-semibold  text-white w-fit px-6 py-3 my-2  flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">
                 Marketplace
                 <span className="md:group-hover:rotate-90 duration-300">
                   <AiOutlineArrowRight size={25} className="ml-2 font-semibold max-sm:hidden" />
