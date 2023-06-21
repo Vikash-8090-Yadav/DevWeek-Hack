@@ -83,7 +83,7 @@ _\* The integration of all things together was the major part we wanted to make 
   
 <table>
 <tr>
-<td  align="center"><a href="https://github.com/Mahak008"><img src="https://github.com/Vikash-8090-Yadav/DevWeek-Hack/assets/85225156/b1ca98df-14da-4120-87a7-fda10cc2aa4f" width=150px height=150px /></a></br> <h4 style="color:red;">Riya Agrawal</h4>
+<td  align="center"><a href="https://github.com/Riya500-git"><img src="https://github.com/Vikash-8090-Yadav/DevWeek-Hack/assets/85225156/b1ca98df-14da-4120-87a7-fda10cc2aa4f" width=150px height=150px /></a></br> <h4 style="color:red;">Riya Agrawal</h4>
 <a href="https://www.linkedin.com/in/riya-agrawal-983109174/"><img src="https://mpng.subpng.com/20180324/vhe/kisspng-linkedin-computer-icons-logo-social-networking-ser-facebook-5ab6ebfe5f5397.2333748215219374063905.jpg" width="32px" height="32px"></a>
 
 
