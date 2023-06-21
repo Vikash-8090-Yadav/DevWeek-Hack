@@ -8,10 +8,14 @@
 
 <div align="center">
   
-![License](https://img.shields.io/badge/License-MIT-737CA1?style=flat-square) 
-![React_Badge](https://img.shields.io/badge/ReactJS-13.1.0-blue?style=flat-square)
-![TailwindCSS_Badge](https://img.shields.io/badge/TailwindCSS-3.0.7-yellow?style=flat-square)
-![https://img.shields.io/badge/Made%20with-Hardhat-yellow](https://img.shields.io/badge/Made%20with-Hardhat-red)
+[![Next.js](https://img.shields.io/badge/Built_with-Next.js-000000?logo=next.js)](https://nextjs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Styled_with-Tailwind_CSS-38B2AC?logo=tailwind-css)](https://tailwindcss.com/)
+[![Hardhat](https://img.shields.io/badge/Built_with-Hardhat-blue.svg)](https://hardhat.org/)
+[![ethers.js](https://img.shields.io/badge/Powered_by-ethers.js-3C3C3D?logo=ethereum)](https://docs.ethers.io/)
+[![Celo](https://img.shields.io/badge/Built_for-Celo-8247E5?logo=polygon)](https://celo.org/)
+[![IPFS](https://img.shields.io/badge/Powered_by-IPFS-65C2CB?logo=ipfs)](https://ipfs.io/)
+[![Powered by Ethereum](https://img.shields.io/badge/Powered_by-Ethereum-3C3C3D?logo=ethereum)](https://ethereum.org/)
+
 </div>
 
 ## How to Run Locally
@@ -97,14 +101,6 @@ The integration of IPFS (InterPlanetary File System) enables cloth manufacturers
 ## Built With
 
 This project was developed with the following technologies:
-[![Next.js](https://img.shields.io/badge/Built_with-Next.js-000000?logo=next.js)](https://nextjs.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Styled_with-Tailwind_CSS-38B2AC?logo=tailwind-css)](https://tailwindcss.com/)
-[![Hardhat](https://img.shields.io/badge/Built_with-Hardhat-blue.svg)](https://hardhat.org/)
-[![ethers.js](https://img.shields.io/badge/Powered_by-ethers.js-3C3C3D?logo=ethereum)](https://docs.ethers.io/)
-[![Celo](https://img.shields.io/badge/Built_for-Polygon-8247E5?logo=polygon)](https://celo.org/)
-[![IPFS](https://img.shields.io/badge/Powered_by-IPFS-65C2CB?logo=ipfs)](https://ipfs.io/)
-[![Powered by Ethereum](https://img.shields.io/badge/Powered_by-Ethereum-3C3C3D?logo=ethereum)](https://ethereum.org/)
-
 
 #### **Frontend** 
   - [ReactJS](https://react.dev/)
