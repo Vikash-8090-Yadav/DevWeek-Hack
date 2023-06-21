@@ -23,6 +23,7 @@ const Hero = () => {
               <div className = "text-blue text-1xl max-md:text-2xl py-6 mb-3">Decentralised Application for </div> 
               
             </h5>
+           
             <div className = "text-yellow-400 max-md:text-1xl text-5xl font-bold flex flex-col max-md:items-center justify-center">
               <Typewriter options = {{ strings: ["Crop Management","Proof of ownership", "Decide the price Directlt by owner"], autoStart: true, loop: true, }}/>
               </div>
@@ -58,6 +59,7 @@ const Hero = () => {
           
           </div>
         </div>
+        
        
       </div>
       

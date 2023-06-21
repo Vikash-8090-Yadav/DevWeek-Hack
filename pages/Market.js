@@ -27,7 +27,7 @@ function Market() {
 
       <div className={style.wrapper}>
         <nav className="border-b p-10">
-          <p className="text-7xl font-medium">AgriCrop Marketplace</p>
+          <p className="text-7xl font-medium">Subs Marketplace</p>
           <div className="flex mt-4">
             <Link href="/">
               <div className="mr-6 text-black-500">
