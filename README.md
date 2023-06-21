@@ -97,6 +97,14 @@ The integration of IPFS (InterPlanetary File System) enables cloth manufacturers
 ## Built With
 
 This project was developed with the following technologies:
+[![Next.js](https://img.shields.io/badge/Built_with-Next.js-000000?logo=next.js)](https://nextjs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Styled_with-Tailwind_CSS-38B2AC?logo=tailwind-css)](https://tailwindcss.com/)
+[![Hardhat](https://img.shields.io/badge/Built_with-Hardhat-blue.svg)](https://hardhat.org/)
+[![ethers.js](https://img.shields.io/badge/Powered_by-ethers.js-3C3C3D?logo=ethereum)](https://docs.ethers.io/)
+[![Celo](https://img.shields.io/badge/Built_for-Polygon-8247E5?logo=polygon)](https://celo.org/)
+[![IPFS](https://img.shields.io/badge/Powered_by-IPFS-65C2CB?logo=ipfs)](https://ipfs.io/)
+[![Powered by Ethereum](https://img.shields.io/badge/Powered_by-Ethereum-3C3C3D?logo=ethereum)](https://ethereum.org/)
+
 
 #### **Frontend** 
   - [ReactJS](https://react.dev/)
@@ -106,6 +114,7 @@ This project was developed with the following technologies:
    - [ExpressJS](https://expressjs.com/)
    - [IPFS](https://ipfs.tech/)
    - [Hardhat](https://hardhat.org/)
+   - [Celo Faucet](https://celo.org/)
 
 ## Development Challenges
 
