@@ -30,6 +30,7 @@
     "react-dom": "^18.1.0",
     "react-hot-toast": "^2.2.0",
     "react-icons": "^4.3.1",
+    "react-loader-spinner": "^5.3.4",
     "react-pro-sidebar": "^0.7.1",
     "react-router-dom": "^6.2.2",
     "react-scroll": "^1.8.9",
