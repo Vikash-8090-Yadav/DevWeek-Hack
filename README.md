@@ -94,7 +94,7 @@ _\* The integration of all things together was the major part we wanted to make 
 
 
    </td>
-<td align="center"><a href="https://github.com/Vikash-8090-Yadav"><img src="https://github.com/Vikash-8090-Yadav/DevWeek-Hack/assets/85225156/3646a86c-a9fc-4cb5-9725-33db2c572b7a" width=150px height=150px /></a></br> <h4 style="color:red;">Vikash Kumar Yadav</h4>
+<td align="center"><a href="https://github.com/Vikash-8090-Yadav"><img src="https://avatars.githubusercontent.com/u/85225156?s=400&u=3363e9db42792ae40a18b3119c745930bb85cf47&v=4" width=150px height=150px /></a></br> <h4 style="color:red;">Vikash Kumar Yadav</h4>
 <a href="https://www.linkedin.com/in/vikash-kumar-yadav-8090/"><img src="https://mpng.subpng.com/20180324/vhe/kisspng-linkedin-computer-icons-logo-social-networking-ser-facebook-5ab6ebfe5f5397.2333748215219374063905.jpg" width="32px" height="32px"></a>
    </td>
   
