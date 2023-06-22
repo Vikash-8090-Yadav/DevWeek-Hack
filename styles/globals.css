@@ -173,3 +173,7 @@ side-over{
   flex-direction: column;
   border-radius: 8px;
 }
+
+.load{
+  background: linear-gradient(135deg, #690A4A, #59194A, #49274A, #39364B, #28454B, #18534B, #08624B);
+}
