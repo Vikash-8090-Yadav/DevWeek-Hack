@@ -45,7 +45,7 @@ Open your web browser and visit http://localhost:3000 to interact with the SaL a
     </tr>
     <tr>
       <td>Vercel</td>
-      <td> https://dev-week-hack.vercel.app/ /</td>
+      <td> https://dev-week-hack.vercel.app/</td>
     </tr>
     <tr>
       <td>Youtube Link</td>
@@ -117,6 +117,13 @@ This project was developed with the following technologies:
 During the development process, our team encountered various challenges that required innovative solutions. Integrating the CELO blockchain while ensuring the security and transparency of transactions was a significant hurdle. We overcame this obstacle by implementing robust smart contracts and conducting thorough auditing and testing. Additionally, designing an intuitive UI/UX experience that catered to the needs of both cloth manufacturers and local shops required careful consideration and iterative design processes. 🚀💡✨
 
 _\* The integration of all things together was the major part we wanted to make sure that it is easy to contribute._
+
+## Video for reference
+
+
+https://github.com/Vikash-8090-Yadav/DevWeek-Hack/assets/85225156/6d4b3605-9464-4900-ad24-ec3c5cdd3aa3
+
+
 
 ## :mailbox_with_mail: Get in touch!
 
