@@ -159,7 +159,7 @@ export default function Navbar() {
         <Link className="text-4xl tracking-widest  font-semibold" href="/">
           {" "}
           <h3>
-            <span className="text-blue-500">SustainableStitch </span>
+            <img src = 'https://i.ibb.co/bd0w4PQ/1-1.png' alt=''/>
           </h3>
         </Link>
       </div>

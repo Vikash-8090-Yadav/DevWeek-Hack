@@ -4,19 +4,24 @@ import Image from "next/image";
 import BlockChain from "../public/images/hero.png";
 const features = [
   {
-    name: 'Push to deploy.',
+    name: 'Registration and Onboarding:',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'Cloth manufacturers and local shops can sign up for SustainableStitch by creating their accounts. They provide relevant information about their business, including contact details and product categories.',
     icon: CloudArrowUpIcon,
   },
   {
-    name: 'SSL certificates.',
-    description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
+    name: 'Product Showcase:',
+    description: 'Cloth manufacturers can create captivating product listings, including detailed descriptions, high-quality images, and pricing information. They can showcase their unique offerings to attract potential buyers.',
     icon: LockClosedIcon,
   },
   {
-    name: 'Database backups.',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+    name: 'Search and Discovery:',
+    description: 'Local shops can explore the SustainableStitch platform and discover a wide range of products offered by cloth manufacturers. They can browse through different categories, apply filters, and find products that align with their store style and target audience.',
+    icon: ServerIcon,
+  },
+  {
+    name: 'Secure Blockchain Transactions:',
+    description: 'SustainableStitch leverages the CELO blockchain to ensure secure and tamper-proof transactions. Manufacturers and local shops can execute transactions for product purchases, with the assurance of a trusted and decentralized environment.',
     icon: ServerIcon,
   },
 ]
@@ -29,12 +34,7 @@ export default function Example() {
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:pr-8 lg:pt-4">
             <div className="lg:max-w-lg">
-              <h2 className="text-base font-semibold leading-7 text-indigo-600">Deploy faster</h2>
-              <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">A better workflow</p>
-              <p className="mt-6 text-lg leading-8 text-gray-600">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                iste dolor cupiditate blanditiis ratione.
-              </p>
+              <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Features</p>
               <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
                 {features.map((feature) => (
                   <div key={feature.name} className="relative pl-9">
