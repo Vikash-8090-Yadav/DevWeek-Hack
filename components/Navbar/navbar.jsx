@@ -2,7 +2,7 @@ import { useState } from "react";
 import Script from "next/script";
 import Link from 'next/link'
 import Image from "next/image";
-import logo from "../../public/images/logo1.png";
+import logo from "../../public/images/1.png";
 
 function NavLink({ to, children }) {
   return (
@@ -153,7 +153,7 @@ export default function Navbar() {
         <Link className="text-4xl tracking-widest  font-semibold" href="/">
           {" "}
           <h3>
-          <Image src = {logo} height="90" width="90" className = "rounded-full max-md:pt-10 " />
+          <Image src = {logo} height="130" width="130" className = "rounded-full max-md:pt-10 " />
           </h3>
         </Link>
       </div>
