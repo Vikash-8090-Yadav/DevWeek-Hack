@@ -121,7 +121,11 @@ _\* The integration of all things together was the major part we wanted to make 
 ## Video for reference
 
 
-https://github.com/Vikash-8090-Yadav/DevWeek-Hack/assets/85225156/6d4b3605-9464-4900-ad24-ec3c5cdd3aa3
+
+
+https://github.com/Vikash-8090-Yadav/DevWeek-Hack/assets/85225156/69919e0b-562c-4734-8c9a-7b616ae7b554
+
+
 
 
 
