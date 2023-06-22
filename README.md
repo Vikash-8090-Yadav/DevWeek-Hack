@@ -47,6 +47,14 @@ Open your web browser and visit http://localhost:3000 to interact with the SaL a
       <td>Vercel</td>
       <td> https://dev-week-hack.vercel.app/ /</td>
     </tr>
+    <tr>
+      <th>Youtube Link</th>
+      <th>URL</th>
+    </tr>
+    <tr>
+      <td>Vercel</td>
+      <td>https://www.youtube.com/watch?v=LzAOoFHvQsw/</td>
+    </tr>
   </table>
 </div>
 
