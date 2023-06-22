@@ -1,10 +1,5 @@
 # Sustainable Stitch
-
-
 ![Github_banner](https://github.com/Vikash-8090-Yadav/DevWeek-Hack/assets/89217455/007fc161-ec9c-49f0-aa6b-f82bc1b0b7de)
-
-
-
 
 <div align="center">
   
@@ -118,7 +113,6 @@ During the development process, our team encountered various challenges that req
 
 _\* The integration of all things together was the major part we wanted to make sure that it is easy to contribute._
 
-
 ## :mailbox_with_mail: Get in touch!
 
 <p align="center">
@@ -127,22 +121,16 @@ _\* The integration of all things together was the major part we wanted to make 
 <table>
 <tr>
 <td  align="center"><a href="https://github.com/Riya500-git"><img src="https://github.com/Vikash-8090-Yadav/DevWeek-Hack/assets/85225156/b1ca98df-14da-4120-87a7-fda10cc2aa4f" width=150px height=150px /></a></br> <h4 style="color:red;">Riya Agrawal</h4>
-<a href="https://www.linkedin.com/in/riya-agrawal-983109174/"><img src="https://mpng.subpng.com/20180324/vhe/kisspng-linkedin-computer-icons-logo-social-networking-ser-facebook-5ab6ebfe5f5397.2333748215219374063905.jpg" width="32px" height="32px"></a>
-
-
+<a href="https://www.linkedin.com/in/riya-agrawal-983109174/"><img src="https://github.com/Vikash-8090-Yadav/DevWeek-Hack/assets/original.jpg" width="32px" height="32px"></a>
    </td>
-   
   <td  align="center"><a href="https://github.com/Nishu0"><img src="https://avatars.githubusercontent.com/u/89217455?v=4" width=150px height=150px /></a></br> <h4 style="color:red;">Nishu</h4>
 <a href="https://www.linkedin.com/in/nishu0/"><img src="https://mpng.subpng.com/20180324/vhe/kisspng-linkedin-computer-icons-logo-social-networking-ser-facebook-5ab6ebfe5f5397.2333748215219374063905.jpg" width="32px" height="32px"></a>
-
-
    </td>
 <td align="center"><a href="https://github.com/Vikash-8090-Yadav"><img src="https://avatars.githubusercontent.com/u/85225156?s=400&u=3363e9db42792ae40a18b3119c745930bb85cf47&v=4" width=150px height=150px /></a></br> <h4 style="color:red;">Vikash Kumar Yadav</h4>
 <a href="https://www.linkedin.com/in/vikash-kumar-yadav-8090/"><img src="https://mpng.subpng.com/20180324/vhe/kisspng-linkedin-computer-icons-logo-social-networking-ser-facebook-5ab6ebfe5f5397.2333748215219374063905.jpg" width="32px" height="32px"></a>
    </td>
   
-  
 </tr>
 </table>
-  Made with ❤️ by <b>Riya, Nisarg and Vikash</b>.
+  Made with ❤️ by <b>Nisarg, Riya and Vikash</b>.
 <p/>
