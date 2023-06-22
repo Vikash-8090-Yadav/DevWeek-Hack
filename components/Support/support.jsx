@@ -86,10 +86,10 @@ const Support = () => {
       <div name = "contact" className = "support w-full p-4">
         <div className = "flex flex-col p-4 justify-center max-w-screen-lg mx-auto ">
             <div className = "pb-8">
-                <p className = "text-4xl font-bold text-white text-center flex items-center justify-center">Buy me a
+                <p className = "text-4xl font-bold text-white text-center flex items-center justify-center">Support Us
                  
                 </p>
-                <p className = "py-6 text-center text-white text-xl font-semibold">Submit the form below to buy me a coffee.</p>
+                <p className = "py-6 text-center text-white text-xl font-semibold">Submit the form below to Support our work.</p>
             </div>
 
             <div className = "flex justify-center items-center">
@@ -111,13 +111,13 @@ const Support = () => {
                   >
                   
                   
-                <p>Enter amount in polygon MATIC youd like to send</p>
+                <p>Enter amount in  CELO Asset youd like to send</p>
                   <Input
                   prefix=""
                   value={polygonAmount}
                   onChange={updateAmount}
                   placeholder="50"
-                  suffix="matic"
+                  suffix="Celo"
                 />
             </Modal>
                 </form>
