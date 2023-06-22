@@ -9,7 +9,7 @@ import Image from "next/image";
 import {AiOutlineArrowRight, AiOutlineArrowDown, AiOutlineArrowLeft} from 'react-icons/ai'
 import { ethers } from 'ethers';
 
-import ProfilePic from "../../public/images/FlowDiagram.png";
+import ProfilePic from "../../public/images/hero2.png";
 
 import { Modal, Input, Tooltip } from 'antd'
 
