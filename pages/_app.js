@@ -6,7 +6,7 @@ import Typewriter from 'typewriter-effect';
 import '../styles/sidebar.css';
 import { ThirdwebWeb3Provider } from '@3rdweb/hooks';
 import '../styles/Home.module.css';
-import DotLoader from "react-spinners/RingLoader";
+import DotLoader from "react-spinners/PacmanLoader";
 
 function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = useState(true);
@@ -29,7 +29,7 @@ function MyApp({ Component, pageProps }) {
     <div>
       {loading ? (
          <div className="load  justify-center w-screen h-screen flex flex-col justify-center items-center">
-         <DotLoader  color={"pink"} loading={loading}  size={81} aria-label="Loading Spinner"
+         <DotLoader  color={"#00BFFF"} loading={loading}  size={41} aria-label="Loading Spinner"
              data-testid="loader" />
              <div className="text-yellow-400 my-12  max-md:text-1xl text-5xl font-bold flex flex-col max-md:items-center py-2 ">
               <Typewriter options = {{ strings: ["Welcome to SustainableStitch"], autoStart: true, loop: true, }}/>

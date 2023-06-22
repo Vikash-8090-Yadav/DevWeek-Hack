@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Link from 'next/link'
 const MyComponent = () => {
   return (
     <div className="my-6">
@@ -14,7 +14,9 @@ const MyComponent = () => {
           <div className="flex pt-7 md:pt-0 justify-center items-center">
             <p className="text-xl font-black">
               <span className="bg-blue-500 rounded-lg text-white px-6 py-3">
+              <Link href={"https://github.com/Vikash-8090-Yadav/DevWeek-Hack"}>
                 Take Help !
+                </Link>
               </span>
             </p>
           </div>
